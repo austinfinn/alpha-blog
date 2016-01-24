@@ -1,2 +1,44 @@
+$navbar-default-bg: #286090;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  background-image: asset-url('tumblr-nature-backgrounds.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+.homepage-btn {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.homepage-btn:hover {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+navbar-btn{
+  color: #fff;
+}
