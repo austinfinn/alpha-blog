@@ -6,9 +6,9 @@
   <%= simple_format(@article.description) %><br>
 <div>
 <div>
-  <%= link_to "Edit", edit_article_path(@article), class: "btn btn-info alpha-blog-btn" %>
+  <%= link_to "Edit", edit_article_path(@article), class: "btn btn-primary" %>
   <%= link_to 'Delete', article_path(@article), class: "btn btn-info btn-danger", 
                                                 method: :delete, 
                                                 data: {confirm: "Are you sure?"} %>
-  <%= link_to "Cancel", articles_path, class: "btn btn-info btn-default" %>
+  <%= link_to "View all articles", articles_path, class: "btn btn-success" %>
 </div>
