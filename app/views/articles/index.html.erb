@@ -14,6 +14,13 @@
           <%= link_to "Delete this article", article_path(article), method: :delete,
                                              data: { confirm: "Are you sure you want to delete the article?"},
                                              class: "btn btn-xs btn-danger" %>
+           <div class="meta_data">
+             <small>
+                <div>Created by <%= article.user.username if article.user %></div>
+                <div>Created <%= time_ago_in_words(article.created_at) %></div>
+                <div>Updated <%= time_ago_in_words(article.updated_at) %></div>
+             </small>
+           </div>
         </div>
       </div>
     </div>
