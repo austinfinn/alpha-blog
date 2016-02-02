@@ -8,8 +8,11 @@ Rails.application.routes.draw do
   root to: 'page#home'
   get 'about' => 'page#about'
 
-
   resources :articles
+  
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
